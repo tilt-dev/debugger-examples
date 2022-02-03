@@ -8,7 +8,6 @@
 
 ## To Run this example
 1. Run `tilt up` - this should build the sample project docker image and launch it in tilt
-1. Run `kubectl get pods` and copy the name of the pod that starts with `dotnet-api`
 1. In VS Code, go to 'Run and Debug', and select 'K8s Attach'
 1. Press F5 or the green arrow.
 1. Set a breakpoint in the WeatherForecastController's `Get` method.
