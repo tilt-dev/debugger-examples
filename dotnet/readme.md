@@ -53,7 +53,7 @@ The launch.json file in the .vscode folder uses `kubectl` to connect VS Code to 
                 "pipeArgs": [
                     "exec",
                     "-i",
-                    "pod/dotnet-api-6746c844d4-gj6xs", // NAME of your Pod goes here
+                    "deploy/dotnet-api",
                     "--"
                 ],
                 "pipeCwd": "${workspaceFolder}",
