@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: dotnet-api
+  name: dotnet-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: dotnet-api
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        service: dotnet-api
+    spec:
+      containers:
+        - image: dotnet-api/dotnet-api
+          imagePullPolicy: Never
+          name: dotnet-api
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}

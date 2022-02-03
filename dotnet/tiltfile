@@ -1,0 +1,8 @@
+docker_build(
+    'dotnet-api/dotnet-api',
+    '.',
+    dockerfile='src/dotnet-api/Dockerfile'
+)
+
+k8s_yaml(['k8s/dotnet-api-deployment.yaml', 'k8s/dotnet-api-service.yaml'])
+
