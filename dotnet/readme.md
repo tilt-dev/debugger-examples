@@ -14,8 +14,6 @@
 1. Set a breakpoint in the WeatherForecastController's `Get` method.
 1. Go to `localhost:5555/weatherforecast`. your breakpoint should get hit
 
-NOTE: You will need to update the name of the pod anytime the pod is rebuilt. If anyone knows how to automate this, a PR would be greately appreciated.
-
 ## Project Setup
 There's a few steps to set your project up for debugging. Essentially you are "remote" debugging into the container inside a Kubernetes pod.
 ### Docker file
