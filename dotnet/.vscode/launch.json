@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "K8s Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": 1,
+            "justMyCode": true,
+            "pipeTransport": {
+                "pipeProgram": "kubectl",
+                "pipeArgs": [
+                    "exec",
+                    "-i",
+                    "pod/dotnet-api-f66fbd56c-6vzct", // NAME of your Pod goes here
+                    "--"
+                ],
+                "pipeCwd": "${workspaceFolder}",
+                "debuggerPath": "/vsdbg/vsdbg",
+                "quoteArgs": false
+            },
+            "sourceFileMap": {
+                // update these directories to match your code base
+                "/src": "${workspaceFolder}/src",
+                "/app": "${workspaceFolder}/src/dotnet-api"
+            }
+        }
+    ]
+}
