@@ -12,7 +12,7 @@
                 "pipeArgs": [
                     "exec",
                     "-i",
-                    "pod/dotnet-api-f66fbd56c-6vzct", // NAME of your Pod goes here
+                    "deploy/dotnet-api",
                     "--"
                 ],
                 "pipeCwd": "${workspaceFolder}",
